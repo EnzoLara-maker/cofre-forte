@@ -18,7 +18,6 @@ public class Cliente {
         return cpf;
     }
 
-    // Sem setCpf(): o CPF nunca pode ser alterado após a criação (RN02)
 
     public String getNome() {
         return nome;
@@ -51,7 +50,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        // CPF oculto por segurança (LGPD) - RN02
         return "Cliente: " + nome + " | Contato: " + email;
     }
 }
