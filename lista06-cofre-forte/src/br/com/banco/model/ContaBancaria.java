@@ -10,7 +10,6 @@ public class ContaBancaria {
         this.numeroConta = numeroConta;
         this.titular = titular;
         this.saldo = saldoInicial;
-        // Toda conta criada deve se registrar na Agencia (RN03)
         Agencia.registrarNovaConta();
     }
 
@@ -21,8 +20,6 @@ public class ContaBancaria {
     public double getSaldo() {
         return saldo;
     }
-
-    // Sem setSaldo(): saldo só muda via depositar()/sacar() (RN03)
 
     public Cliente getTitular() {
         return titular;
